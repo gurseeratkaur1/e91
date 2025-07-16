@@ -120,6 +120,7 @@ plt.show()
 # =================== Plot 3: SKR ===================
 plt.figure(figsize=(10, 5))
 plt.plot(dist_range, SKR_vals, label="SKR (bps)", color='green')
+plt.semilogy()  # Use logarithmic scale for SKR
 plt.xlabel("Distance (km)")
 plt.ylabel("Secret Key Rate (bps)")
 plt.title("SKR vs Distance (E91 - Optical Fibre)")
